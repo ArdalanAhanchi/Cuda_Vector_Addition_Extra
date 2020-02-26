@@ -15,7 +15,7 @@ Please make sure the CUDA toolkit, and CMake are installed first. To Compile:
 The output executables will be located at the build folder.
 
 ## Executables
-* The COMPILED_NORMAL is the regular vector addition in cuda.
+* The COMPILED_GLOBAL is the regular vector addition in cuda.
 * The COMPILED_REGISTERS is the 5-way loop-unrolled version.
 
 ## Usage
@@ -31,6 +31,5 @@ This usage example assumes that the executable name is COMPILED:
                        In quiet mode, only the timing results are shown.
                        In Verbose mode, the matrices and residual are also shown.
 
-## Plotter
-Plotter is a program which parses the output from the program, and creates a 3D
-Plot. 
+## Parser
+Parser is a program which reads the output data of the program, parses it, and can filter out / print specific data. In this implementation, it calculates FLOPS and prints them out to stdout.

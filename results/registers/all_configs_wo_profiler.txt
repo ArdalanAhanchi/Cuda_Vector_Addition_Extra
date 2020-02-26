@@ -1,0 +1,5 @@
+[Cuda_Transfer_To_Device_Seconds]=2.847075e-03  [Cuda_Transfer_To_Host_Seconds]=3.251503e-03  [Cuda_Calculation_Time_Seconds]=1.883938e-01  [Sequential_Time_Seconds]=7.023914e-03  [N]=2097152  [Blocks]=1  [Threads]=1
+[Cuda_Transfer_To_Device_Seconds]=2.795775e-03  [Cuda_Transfer_To_Host_Seconds]=3.241396e-03  [Cuda_Calculation_Time_Seconds]=1.714974e-03  [Sequential_Time_Seconds]=6.834561e-03  [N]=2097152  [Blocks]=8  [Threads]=16
+[Cuda_Transfer_To_Device_Seconds]=2.824559e-03  [Cuda_Transfer_To_Host_Seconds]=3.209421e-03  [Cuda_Calculation_Time_Seconds]=4.699980e-04  [Sequential_Time_Seconds]=6.901773e-03  [N]=2097152  [Blocks]=32768  [Threads]=1
+[Cuda_Transfer_To_Device_Seconds]=2.840687e-03  [Cuda_Transfer_To_Host_Seconds]=3.207857e-03  [Cuda_Calculation_Time_Seconds]=1.155025e-03  [Sequential_Time_Seconds]=7.296636e-03  [N]=2097152  [Blocks]=32768  [Threads]=1024
+[Cuda_Transfer_To_Device_Seconds]=2.121606e-02  [Cuda_Transfer_To_Host_Seconds]=2.585546e-02  [Cuda_Calculation_Time_Seconds]=1.246703e-03  [Sequential_Time_Seconds]=5.515548e-02  [N]=16777216  [Blocks]=32768  [Threads]=1024

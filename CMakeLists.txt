@@ -13,6 +13,6 @@ Set (CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-pthread")
 
 ## Setup the build directory.
 set( EXECUTABLE_OUTPUT_PATH build )
-add_executable( COMPILED_NORMAL ./src/vec_addition_normal.cu )
+add_executable( COMPILED_GLOBAL ./src/vec_addition_global.cu )
 add_executable( COMPILED_REGISTERS ./src/vec_addition_registers.cu )
 

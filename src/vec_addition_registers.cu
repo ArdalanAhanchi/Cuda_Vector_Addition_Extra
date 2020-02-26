@@ -30,7 +30,7 @@ __global__ void cuda_calculator(type* a, type* b, type* c, int num_calcs)
     int curr_index = start_index;
 
     //Unroll the loop 5 times if necessary.
-    while(curr_index < end_index)
+    while(curr_index < end_index - 5)
     {
         //Calculate the increased indexes to avoid calculating it 3 times.
         int idx1 = curr_index + 1, idx2 = curr_index + 2, 

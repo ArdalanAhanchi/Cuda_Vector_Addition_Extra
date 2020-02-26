@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# File:     A program which parses the input data from the tests, and creates plots.
+# File:     A program which parses the input data from the tests, and calculates flops.
 # Author:   Ardalan Ahanchi
 # Date:     Winter 2020
 
@@ -43,43 +43,8 @@ for line in sys.stdin:
     else:
         print("Error: Could not parse data.")
 
-
-#Figure 1
-##########################################################################################
-fig1_x_seq, fig1_x_cu_total, fig1_x_cu_calc_only = [], [], []
-fig1_y_seq, fig1_y_cu_total, fig1_y_cu_calc_only = [], [], []
-fig1_z_seq, fig1_z_cu_total, fig1_z_cu_calc_only = [], [], []
-
-#Iterate through the data and filter out the right points for drawing.
-for ent in data:
-    #    fig1_x_seq.append(ent.calc_time_seq)
-    #    fig1_y_seq.append(ent.blocks)
-    #    fig1_z_seq.append(ent.threads)
-
-    fig1_x_cu_total.append(ent.calc_time_cuda + ent.transfer_to_dev + ent.transfer_to_host)
-    fig1_y_cu_total.append((ent.blocks * ent.threads))
-    fig1_z_cu_total.append(ent.n)
-
-    fig1_x_cu_calc_only.append(ent.calc_time_cuda)
-    fig1_y_cu_calc_only.append((ent.blocks * ent.threads))
-    fig1_z_cu_calc_only.append(ent.n)
+for entry in data:
+    print("[Flops] =", entry.n / entry.calc_time_cuda)
 
 
-#Create the 3d plot.
-fig = plot.figure()
-ax = plot.axes(projection='3d')
 
-#Set labels and plot it.
-plot.title("CUDA Total Time")
-ax.scatter3D(fig1_z_cu_total, fig1_y_cu_total, fig1_x_cu_total)
-ax.set_xlabel("N (Size)")
-ax.set_ylabel("Total Threads (Threads * Blocks)")
-ax.set_zlabel("Time (Seconds)")
-plot.show()
-
-plot.title("CUDA Calculations Only Time")
-ax.scatter3D(fig1_z_cu_calc_only, fig1_y_cu_calc_only, fig1_x_cu_calc_only)
-ax.set_xlabel("N (Size)")
-ax.set_ylabel("Total Threads (Threads * Blocks)")
-ax.set_zlabel("Time (Seconds)")
-plot.show()

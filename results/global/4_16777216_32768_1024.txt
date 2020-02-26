@@ -1,0 +1,1 @@
+[Cuda_Transfer_To_Device_Seconds]=2.157273e-02  [Cuda_Transfer_To_Host_Seconds]=4.363507e-02  [Cuda_Calculation_Time_Seconds]=1.256018e+00  [Sequential_Time_Seconds]=5.417826e-02  [N]=16777216  [Blocks]=32768  [Threads]=1024

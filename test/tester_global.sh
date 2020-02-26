@@ -1,0 +1,10 @@
+#! /bin/bash
+ 
+# Baseline configurations.
+./build/COMPILED_GLOBAL 2097152 1 1 q
+./build/COMPILED_GLOBAL 2097152 8 16 q
+./build/COMPILED_GLOBAL 2097152 32768 1 q
+./build/COMPILED_GLOBAL 2097152 32768 1024 q
+./build/COMPILED_GLOBAL 16777216 32768 1024 q
+
+exit 0;
