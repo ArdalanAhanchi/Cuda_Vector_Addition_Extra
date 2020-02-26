@@ -33,3 +33,10 @@ This usage example assumes that the executable name is COMPILED:
 
 ## Parser
 Parser is a program which reads the output data of the program, parses it, and can filter out / print specific data. In this implementation, it calculates FLOPS and prints them out to stdout.
+
+## Directories
+* build     :   Contains the fully built binaries (executables).
+* doc       :   Contains the report and documentations.
+* results   :   Contains the test results gathered from running the test scripts.
+* src       :   Contains the source code for the implementations.
+* test      :   Contains bash scripts used for gathering data.
