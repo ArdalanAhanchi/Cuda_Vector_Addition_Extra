@@ -7,7 +7,7 @@ vectors, and find the residual vector. In addition to the regular implementation
 this version introduces loop unrolling in the main kernel.
 
 ## Compilation
-Please make sure the CUDA toolkit, and CMake are installed first. To Compile:
+Please make sure the CUDA toolkit, and CMake are installed first. To Compile on Linux:
 
     cmake .
     make
